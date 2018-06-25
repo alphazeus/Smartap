@@ -1,0 +1,44 @@
+<html>
+<head>
+	<h2>SMARTAP DATA</h2>
+	<style>
+	table, td 
+	{    border: 1px solid black;}
+	table
+	{width:100%;}
+	button
+	{width: 100%;}
+	</style>
+</head>
+<body>
+<form action=\"changedata\" method=\"get\" enctype=\"multipart/form-data\" name=\"threshold\" id=\"threshold\" target=\"_self\">
+<table>
+	<tr>
+    <th>Tap state</th>
+    <td>
+    	<select>
+ 		<option value="ON">ON</option>
+		<option value="OFF">OFF</option>
+		</select> 
+	</td>   
+ 	</tr>
+	<tr>
+    <th>Consumption rate</th>
+    <td>#</td>
+   	</tr>
+   	<tr>
+    <th>Total consumption</th>
+    <td>#</td>
+	</tr>
+   	<tr>
+    <th>Consumption threshold</th>
+    <td><input type=\"text\" name=\"consthresh\" value='0' size=\"4\" maxlength=\"3\" />&nbsp;</td></td>
+  	</tr>
+  	<tr>
+		<th></th>
+  		<td><button type="submit" form="threshold" value="Save">Submit</button></td>
+    </tr>
+</table>
+</form>
+</body>
+</html>
